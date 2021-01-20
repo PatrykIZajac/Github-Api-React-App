@@ -4,4 +4,4 @@ Made the project in order to learn the basic functions of the React framework, a
 
 ## Netlify link to see site in action!
 
-[Github-open-api](https://react-github-open-api.netlify.app)
+[Github-open-api](https://github-api-react-app.netlify.app)
