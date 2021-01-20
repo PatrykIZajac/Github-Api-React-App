@@ -1,0 +1,101 @@
+.card {
+  width: 190px;
+  height: 210px;
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: 150px 50px 130px;
+  grid-template-areas: "image" "text" "stats";
+  font-family: sans-serif;
+  border-radius: 19px;
+  background: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin-left: 2%;
+  margin-bottom: 15%;
+  animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card-image {
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card-image img {
+  height: 160px;
+  width: 190px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card-text {
+  grid-area: text;
+}
+
+.card-text p {
+  font-weight: bold;
+  margin-top: 10%;
+  font-family: sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+a {
+  text-decoration: none;
+  color: black;
+}

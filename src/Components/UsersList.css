@@ -1,0 +1,13 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 1200px;
+  margin: auto;
+}
+li {
+  list-style: none;
+  margin-bottom: 1%;
+  margin-right: 3%;
+}

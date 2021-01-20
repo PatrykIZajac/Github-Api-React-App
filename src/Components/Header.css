@@ -1,0 +1,40 @@
+.navBar{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    overflow: hidden;
+    padding: 1%;
+    margin: 1%;
+    -webkit-box-shadow: 2px 4px 40px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 40px -14px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 40px -14px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+h2{
+      position: relative;
+      font-size: 3vh;
+      color: black;
+      overflow: hidden;
+}
+
+h2::before{
+      content: '';
+      position: absolute;
+      left: 120%;
+      width: 120%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, white 5%, white 100%);
+      animation: animate 2.5s linear forwards;
+  }
+
+  @keyframes animate
+  {
+      0%{
+          left: -20%;
+      }
+      50%{
+          left: 120%;
+      }
+      
+  }
