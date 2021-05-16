@@ -21,30 +21,34 @@ export default function PaginationBar() {
   const listItems = counts.map(
     (element, index) => {
       return (
-        <li>
-          {parseInt(element) < 10 ? (
-            <>
-              <input
-                defaultChecked={
-                  page === index + 1 ||
-                  (index === 0 && page === null)
-                }
-                type="radio"
-                id={element}
-                value={element}
-                name="rButton2"
-                onChange={(e) => {
-                  setNextPage(
-                    parseInt(e.target.value) + 1
-                  );
-                }}
-              />
-              <label htmlFor={element}>
-                {element + 1}
-              </label>
-            </>
-          ) : null}
-        </li>
+          <div>
+            {parseInt(element) < 10 ? (
+                <li>
+                  {parseInt(element) < 10 ? (
+                    <>
+                      <input
+                        defaultChecked={
+                          page === index + 1 ||
+                          (index === 0 && page === null)
+                        }
+                        type="radio"
+                        id={element}
+                        value={element}
+                        name="rButton2"
+                        onChange={(e) => {
+                          setNextPage(
+                            parseInt(e.target.value) + 1
+                          );
+                        }}
+                      />
+                      <label htmlFor={element}>
+                        {element + 1}
+                      </label>
+                    </>
+                  ) : null}
+                </li>
+            ) : null}
+          </div>
       );
     }
   );

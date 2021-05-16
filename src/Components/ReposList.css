@@ -109,4 +109,5 @@
 
 .listContainer ul {
   margin-top: 2%;
+  justify-content: center;
 }
